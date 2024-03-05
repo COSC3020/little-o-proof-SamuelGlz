@@ -20,12 +20,13 @@ $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
 The definition for big-O is:
 
-$f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
+$f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) \leq c g(n)$
 
 Considering the same $f(n) and  g(n)$. If $f(n) \in o(g(n))$, we know that any value of c greater than 0 (and a n_0) satisfies $ \forall n\ge n_0: f(n) < c g(n) $. 
 $\forall c > 0 \implies \exists c >0 $, so based on the big-O definition we can say that $f(n) \in O(g(n))$.
 
 In other words if we know that all c > 0 comply then we can garantee that some c > 0 will work too
-$ \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n) \implies \exists c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
+
+$ \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n) \implies \exists c>0, \exists n_0, \forall n\ge n_0: f(n) \leq c g(n)$
 
 
