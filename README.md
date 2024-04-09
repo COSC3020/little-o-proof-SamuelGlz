@@ -1,6 +1,7 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/wM4-KOzy)
 # Little-o
 
-In addition to the big-O, big-$\Omega$, and big-$\Theta$ notation that
+In addition to the big-O, big- $\Omega$, and big- $\Theta$ notation that
 we covered at the beginning of this class, a few other notations are sometimes
 used in asymptotic analysis.  For example, "little-$o$" notation.
 
@@ -16,3 +17,26 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
+
+The definition for big-O is:
+
+$f(n)\in O(g(n)) \iff \exists c>0, \exists n_0, \forall n\ge n_0: f(n) \leq c g(n)$
+
+
+----
+
+If $f(n) \in o(g(n))$, we know that there is a c > 0 (and a $n_0$) satisfies $\forall$ n $\ge n_0$: f(n) < c g(n). The definition of little o offers a tighter bound (< and for all c) than big O (which is $\leq$ and some c).
+
+$\forall$ c > 0 $\implies$ $\exists$ c > 0 
+
+AND
+
+$\forall$ $n\ge n_0$ : f(n) < c g(n) $\implies$ f(n) $\leq c g(n)$
+
+Based on the big-O definition we can say that $f(n) \in O(g(n))$.
+
+In other words if we know that all c > 0 comply then we can garantee that some c > 0 will work too
+
+$\forall$ c>0, $\exists$ n_0, $\forall$ $n\ge n_0$ : f(n) < c g(n) $\implies$ $\exists$ c>0, $\exists$ n_0, $\forall n\ge$ n_0: f(n) $\leq c g(n)$
+
+
